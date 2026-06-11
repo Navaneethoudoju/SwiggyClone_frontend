@@ -1,0 +1,29 @@
+.productBox img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.productsPage {
+  padding-top: 80px;
+}
+.productSection{
+  padding : 0 160px
+}
+.productBox {
+  position : relative;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+.addButton {
+  border: 1px solid grey;
+  text-align: center;
+  width: 100%;
+  max-width: 80px;
+  margin-left: 20px;
+  position : absolute;
+  bottom: 10px;
+  background-color: white;
+  color: green;
+}

@@ -1,0 +1,81 @@
+.restaurantSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+.restaurantBox img{
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex : 0 0 auto;
+
+}
+
+.firmName{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.firmDetails{
+    font-size: 14px;
+    color: #555;
+}
+.offerDetails{
+    position: absolute;
+    margin-top: -68px;
+    width: 100%;
+    max-width: 242px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.restaurantLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cuisineButtons {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0 14px 0;
+}
+.cuisineButton {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    background: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.cuisineButton.active {
+    background: #ff6b6b;
+    color: #fff;
+    border-color: #ff6b6b;
+    box-shadow: 0 4px 12px rgba(255,107,107,0.18);
+    transform: translateY(-1px);
+}
+
+
+/* Keep page height stable when filtered so grid doesn't collapse */
+.restaurantsDisplay {
+    min-height: calc(100vh - 140px); /* reserve viewport space below header */
+}
+
+.restaurantSection {
+    min-height: 560px; /* ensures grid keeps space even when few items */
+}
